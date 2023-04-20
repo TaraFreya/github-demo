@@ -1,0 +1,5 @@
+<deploy package="services" partName="TestSOAP" partType="Service" version="2">
+	<buildDescriptors>
+		<buildDescriptor name="PMR_SOAPRPCWebBuildOptions" fileName="\PMR_SOAPRPC\EGLSource\PMR_SOAPRPC.eglbld" egldd="pmr_soaprpc" genProject="PMR_SOAPRPC"/>
+	</buildDescriptors>
+</deploy>

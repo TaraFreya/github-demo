@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE EGL PUBLIC "-//IBM Corporation, Inc.//DTD EGL Build Parts 6.0//EN" "">
+
+<EGL>
+<BuildDescriptor
+	name="PMR_SOAPRPCWebBuildOptions"
+	genProject="PMR_SOAPRPC"
+	system="WIN"
+	J2EE="YES"
+	genProperties="GLOBAL"
+	genDataTables="YES"
+	dbms="DERBY"
+	sqlJNDIName=""
+	deploymentDescriptor="PMR_SOAPRPC"
+	serverType="TOMCAT9.X"
+>
+</BuildDescriptor>
+</EGL>

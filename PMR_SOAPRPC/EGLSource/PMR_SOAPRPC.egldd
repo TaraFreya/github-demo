@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egl:deployment xmlns:egl="http://www.ibm.com/xmlns/egl/deployment/7.0">
+  <webservices>
+    <webservice enableGeneration="true" implementation="services.TestSOAP" implType="1024" style="document-wrapped"/>
+  </webservices>
+  <restservices>
+    <restservice enableGeneration="false" implementation="services.TestSOAP" implType="1024" uri="TestSOAP"/>
+  </restservices>
+</egl:deployment>

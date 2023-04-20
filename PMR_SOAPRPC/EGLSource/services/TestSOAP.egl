@@ -1,0 +1,17 @@
+package services;
+
+// service
+
+service TestSOAP
+
+    // Variable Declarations
+    variableName string;
+
+    // Function Declarations
+
+    function functionName(inkomend string in, inkomendInt int in) returns(string)
+        uitgaand string = "je stuurde: " + inkomend;
+        return(uitgaand);
+    end
+
+end

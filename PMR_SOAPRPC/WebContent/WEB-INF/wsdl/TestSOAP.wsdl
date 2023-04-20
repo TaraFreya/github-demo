@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://services" xmlns:tns="http://services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://services" xmlns:tns="http://services" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <element name="functionNameResponse">
+        <complexType>
+          <sequence>
+          <element name="return" nillable ="false" maxOccurs="1" type="xsd:string"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="functionName">
+        <complexType>
+          <sequence>
+          <element name="inkomend" nillable ="false" maxOccurs="1" type="xsd:string"/>
+          <element name="inkomendInt" nillable ="false" maxOccurs="1" type="xsd:int"/>
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="functionNameRequest">
+    <wsdl:part name="parameters" element="tns:functionName"/>
+  </wsdl:message>
+  <wsdl:message name="functionNameResponse">
+    <wsdl:part name="parameters" element="tns:functionNameResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="TestSOAP">
+    <wsdl:operation name="functionName">
+      <wsdl:documentation>EGL_PARAMETER_ORDER inkomend inkomendInt return </wsdl:documentation>
+      <wsdl:input name="functionNameRequest" message="tns:functionNameRequest"/>
+      <wsdl:output name="functionNameResponse" message="tns:functionNameResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TestSOAPBinding" type="tns:TestSOAP">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="functionName">
+      <wsdlsoap:operation soapAction="functionName"/>
+      <wsdl:input name="functionNameRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="functionNameResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TestSOAPService">
+    <wsdl:port name="TestSOAP" binding="tns:TestSOAPBinding">
+      <wsdlsoap:address location="http://localhost:9080/PMR_SOAPRPC/services/TestSOAP"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
