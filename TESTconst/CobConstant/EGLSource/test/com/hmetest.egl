@@ -1,0 +1,20 @@
+package test.com;
+
+// basic program
+//
+
+program hmetest type basicProgram()
+
+    {
+            alias = "AISA0000",
+            textLiteralDefaultIsString = no
+    }
+   
+   
+
+    const TEST5 char(4)[2] = ["TST6","TST7"];
+    
+    function main()
+    end   
+
+end	  

@@ -1,0 +1,5 @@
+<deploy package="test.com" partName="hello" partType="Program" version="2">
+	<buildDescriptors>
+		<buildDescriptor name="CobConstantDebugBuildOptions" fileName="\CobConstant\EGLSource\CobConstant.eglbld" egldd="" genProject="CobConstant"/>
+	</buildDescriptors>
+</deploy>

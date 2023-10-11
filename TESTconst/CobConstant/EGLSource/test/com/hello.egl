@@ -1,0 +1,31 @@
+package test.com;
+
+// basic program
+//
+program hello type BasicProgram {}
+			
+  	// Constant Declarations
+//	const constantName string = "literalString";
+	const VpLogicalProgramName string = "THIS-IS-A-PROGRAM-NAME-THAT-IS-LONGER-THAN-DEFINITION-ALLOWS";
+	const AFF_FUNC_CUSTODY BLWfiCfjTypeAffiliation = "33";
+	
+	const STATUSINACTIVE BLCfyStatusProcessing = 1;
+	//const TestAffiliation string = 1;
+	
+		
+	function main()
+	//	syslib.writeStdout("test "+ VpLogicalProgramName);
+	end
+	
+end
+
+dataItem BLCfyStatusProcessing char(4) 
+end
+
+dataitem VpLogicalProgramName char(36)
+	
+end
+
+dataItem BLWfiCfjTypeAffiliation num(3) 
+end
+

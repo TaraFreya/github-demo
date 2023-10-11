@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE EGL PUBLIC "-//IBM Corporation, Inc.//DTD EGL Build Parts 6.0//EN" "">
+
+<EGL>
+<BuildDescriptor
+	name="CobConstantDebugBuildOptions"
+	genProject="CobConstant"
+	system="WIN"
+	J2EE="NO"
+	genProperties="GLOBAL"
+	genDataTables="YES"
+	dbms="DERBY"
+	sqlValidationConnectionURL="jdbc:derby:C:\Test cases\.metadata\.plugins\com.ibm.datatools.db2.cloudscape.driver\SAMPLE;create=true"
+	sqlJDBCDriverClass="org.apache.derby.jdbc.EmbeddedDriver"
+	sqlDB="jdbc:derby:C:\Test cases\.metadata\.plugins\com.ibm.datatools.db2.cloudscape.driver\SAMPLE;create=true"
+	deploymentDescriptor="CobConstant"
+>
+</BuildDescriptor>
+<BuildDescriptor
+	name="CobConstantCOBOLBuildOptions"
+	system="ZOSCICS"
+	genDirectory="C:\genout\hen9701newInstalle"
+	destHost=""
+	destPort=""
+	destUserID=""
+	destPassword=""
+	projectID=""
+	genDataTables="YES"
+	genFormGroup="YES"
+	genHelpFormGroup="YES"
+	sqlDB=""
+	sqlID=""
+	sqlPassword=""
+	deploymentDescriptor="CobConstant"
+	prep="NO" includeLineNumbers="YES">
+	<symbolicParameter name="DSNLOAD">
+		<symbolicValue>
+			<![CDATA[]]>
+		</symbolicValue>
+	</symbolicParameter>
+	<symbolicParameter name="ELA">
+		<symbolicValue>
+			<![CDATA[]]>
+		</symbolicValue>
+	</symbolicParameter>
+</BuildDescriptor>
+</EGL>
