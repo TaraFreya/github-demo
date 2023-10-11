@@ -1,0 +1,6 @@
+<deploy package="test.com" partName="TruncDec" partType="Program" version="2">
+	<buildDescriptors>
+		<buildDescriptor name="TestDecJavaBuildOptions" fileName="\TestDec_Orig\EGLSource\TestDec.eglbld" egldd="" genProject="TestDec_Orig"/>
+		<buildDescriptor name="TestDecJavaBuildOptions" fileName="\TestDec\EGLSource\TestDec.eglbld" egldd="" genProject="TestDec"/>
+	</buildDescriptors>
+</deploy>

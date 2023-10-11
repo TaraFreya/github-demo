@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE EGL PUBLIC "-//IBM Corporation, Inc.//DTD EGL Build Parts 6.0//EN" "">
+
+<EGL>
+<BuildDescriptor
+	name="TestDecJavaBuildOptions"
+	genProject="TestDec_Orig"
+	system="WIN"
+	J2EE="NO"
+	genProperties="GLOBAL"
+	genDataTables="YES"
+	dbms="DB2"
+	sqlValidationConnectionURL="jdbc:db2://localhost:50000/SAMPLE:retrieveMessagesFromServerOnGetMessage=true;securityMechanism=11;"
+	sqlJDBCDriverClass="com.ibm.db2.jcc.DB2Driver"
+	sqlDB="jdbc:db2://localhost:50000/SAMPLE:retrieveMessagesFromServerOnGetMessage=true;securityMechanism=11;"
+	deploymentDescriptor="TestDec"
+sqlPassword="">
+</BuildDescriptor>
+<BuildDescriptor
+	name="TestDecDebugBuildOptions"
+	genProject="TestDec_Orig"
+	system="WIN"
+	J2EE="NO"
+	genProperties="GLOBAL"
+	genDataTables="YES"
+	dbms="DB2"
+	sqlValidationConnectionURL="jdbc:db2://10.134.49.182:5020/QXPRBH1DCH1:retrieveMessagesFromServerOnGetMessage=true;emulateParameterMetaDataForZCalls=1;"
+	sqlJDBCDriverClass="com.ibm.db2.jcc.DB2Driver"
+	sqlDB="jdbc:db2://10.134.49.182:5020/QXPRBH1DCH1:retrieveMessagesFromServerOnGetMessage=true;emulateParameterMetaDataForZCalls=1;"
+	deploymentDescriptor="TestDec"
+>
+</BuildDescriptor>
+</EGL>
